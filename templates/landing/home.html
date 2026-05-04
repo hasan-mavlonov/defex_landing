@@ -1,204 +1,102 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Husan AI — Real-Time Factory Inspection</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+{% block title %}Automated Quality Inspection for Factories{% endblock %}
 
-<body>
-
-<!-- HERO -->
-
-<section>
-    <h1>Automated Quality Inspection for Factories — Without Enterprise Pricing</h1>
-    <p>
-        Detect defects in real-time using AI running directly on your production line.
-        No cloud. No delays. No $100k systems.
-    </p>
-
-```
-<p><strong>10–20× cheaper than traditional machine vision systems.</strong></p>
-
-<a href="#">Request Demo</a>
-```
-
+{% block content %}
+<section class="hero section">
+    <div class="container">
+        <p class="eyebrow">Factory AI Inspection</p>
+        <h1>Automated Quality Inspection for Factories — Without Enterprise Pricing</h1>
+        <p class="lead">Detect defects in real-time using AI on your production line. No cloud. No delays.</p>
+        <a href="#contact" class="btn">Request Demo</a>
+    </div>
 </section>
 
-<!-- PROBLEM -->
-
-<section>
-    <h2>Factories Are Being Forced to Adopt AI — But Most Can't Afford It</h2>
-
-```
-<p>
-    Governments are pushing AI adoption across manufacturing.
-    But small and mid-sized factories are stuck:
-</p>
-
-<ul>
-    <li>Enterprise systems cost ¥200,000–500,000</li>
-    <li>Cloud-based solutions add latency and complexity</li>
-    <li>Integration takes months</li>
-    <li>Most solutions are built for large enterprises — not SMEs</li>
-</ul>
-```
-
+<section class="section" id="problem">
+    <div class="container">
+        <h2>Problem</h2>
+        <p>Factories are pressured to adopt AI but:</p>
+        <ul>
+            <li>Systems cost ¥200,000–500,000</li>
+            <li>Cloud adds latency</li>
+            <li>Integration is slow</li>
+        </ul>
+    </div>
 </section>
 
-<!-- SOLUTION -->
-
-<section>
-    <h2>A Simple, Affordable AI Inspection System</h2>
-
-```
-<p>
-    Husan AI is a plug-and-play quality inspection system that runs directly on your factory floor.
-</p>
-
-<ul>
-    <li>Real-time defect detection (PASS / FAIL)</li>
-    <li>Identifies specific defect types</li>
-    <li>Runs locally on edge device — no cloud required</li>
-    <li>Deploys in one day</li>
-    <li>Live dashboard accessible from any device</li>
-</ul>
-```
-
+<section class="section alt" id="solution">
+    <div class="container">
+        <h2>Solution</h2>
+        <ul class="grid-list">
+            <li>Real-time defect detection (PASS/FAIL)</li>
+            <li>Runs locally on edge device</li>
+            <li>Deploys in one day</li>
+            <li>Live dashboard</li>
+        </ul>
+    </div>
 </section>
 
-<!-- HOW IT WORKS -->
-
-<section>
-    <h2>How It Works</h2>
-
-```
-<ol>
-    <li>Camera captures products on the production line</li>
-    <li>AI model analyzes each item in real-time</li>
-    <li>System classifies: PASS or FAIL + defect type</li>
-    <li>Results appear instantly on dashboard</li>
-</ol>
-```
-
+<section class="section" id="how-it-works">
+    <div class="container">
+        <h2>How it works</h2>
+        <ol>
+            <li>Camera captures product</li>
+            <li>AI analyzes in real-time</li>
+            <li>PASS/FAIL + defect type</li>
+            <li>Dashboard updates instantly</li>
+        </ol>
+    </div>
 </section>
 
-<!-- TECH -->
-
-<section>
-    <h2>Built for Real Factory Conditions</h2>
-
-```
-<ul>
-    <li>Industrial camera with consistent lighting setup</li>
-    <li>NVIDIA Jetson edge device (high-performance AI processing)</li>
-    <li>Custom-trained AI model for your product defects</li>
-    <li>Real-time monitoring dashboard</li>
-</ul>
-```
-
+<section class="section alt">
+    <div class="container">
+        <h2>Why now</h2>
+        <ul>
+            <li>Government pushing AI manufacturing</li>
+            <li>Subsidies available</li>
+            <li>SMEs underserved</li>
+        </ul>
+    </div>
 </section>
 
-<!-- MARKET TIMING -->
-
-<section>
-    <h2>Why Now</h2>
-
-```
-<p>
-    China's national strategy is aggressively pushing AI into manufacturing.
-</p>
-
-<ul>
-    <li>AI+Manufacturing is a top national priority</li>
-    <li>Government subsidies available for AI adoption</li>
-    <li>Factories are under pressure to upgrade</li>
-    <li>But affordable solutions are missing</li>
-</ul>
-
-<p><strong>This creates a massive gap in the market.</strong></p>
-```
-
+<section class="section" id="pricing">
+    <div class="container">
+        <h2>Pricing</h2>
+        <div class="pricing-grid">
+            <article class="card">
+                <h3>Hardware</h3>
+                <p>¥15,000–30,000</p>
+            </article>
+            <article class="card">
+                <h3>Installation</h3>
+                <p>¥3,000–5,000</p>
+            </article>
+            <article class="card">
+                <h3>Model training</h3>
+                <p>¥5,000–10,000</p>
+            </article>
+            <article class="card">
+                <h3>Monthly</h3>
+                <p>¥2,000–5,000</p>
+            </article>
+        </div>
+    </div>
 </section>
 
-<!-- PRICING -->
-
-<section>
-    <h2>Simple Pricing</h2>
-
-```
-<h3>One-Time</h3>
-<ul>
-    <li>Hardware Kit: ¥15,000–30,000</li>
-    <li>Installation: ¥3,000–5,000</li>
-    <li>Custom Model Training: ¥5,000–10,000</li>
-</ul>
-
-<h3>Monthly</h3>
-<ul>
-    <li>Software License: ¥2,000–5,000</li>
-</ul>
-
-<p>
-    <strong>High-margin system designed for rapid deployment and scalability.</strong>
-</p>
-```
-
+<section class="section alt">
+    <div class="container">
+        <h2>Target</h2>
+        <ul>
+            <li>SMEs (50–500 workers)</li>
+            <li>Electronics, metal, textile, etc.</li>
+        </ul>
+        <h2>Advantages</h2>
+        <ul class="grid-list">
+            <li>10–20× cheaper</li>
+            <li>No cloud</li>
+            <li>Fast deployment</li>
+            <li>Custom per factory</li>
+        </ul>
+    </div>
 </section>
-
-<!-- TARGET -->
-
-<section>
-    <h2>Who It's For</h2>
-
-```
-<ul>
-    <li>Small-to-mid manufacturers (50–500 workers)</li>
-    <li>Electronics, metal parts, textiles, automotive, food packaging</li>
-    <li>Factories in the Yangtze River Delta region</li>
-</ul>
-```
-
-</section>
-
-<!-- ADVANTAGE -->
-
-<section>
-    <h2>Why Husan AI</h2>
-
-```
-<ul>
-    <li>10–20× cheaper than enterprise solutions</li>
-    <li>Runs locally — no cloud dependency</li>
-    <li>Deploys in one day</li>
-    <li>Custom-trained per factory</li>
-    <li>Direct support from an engineer</li>
-</ul>
-```
-
-</section>
-
-<!-- CTA -->
-
-<section>
-    <h2>Start Automating Quality Inspection</h2>
-
-```
-<p>
-    See how AI can reduce defects, save labor, and improve consistency — starting immediately.
-</p>
-
-<a href="#">Request Demo</a>
-```
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-    <p>© 2026 Husan AI. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+{% endblock %}
