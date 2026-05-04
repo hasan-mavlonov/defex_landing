@@ -3,65 +3,65 @@
 {% block title %}Automated Quality Inspection for Factories{% endblock %}
 
 {% block content %}
-<section class="hero section">
+<section class="hero section" aria-labelledby="hero-title">
     <div class="container">
         <p class="eyebrow">Factory AI Inspection</p>
-        <h1>Automated Quality Inspection for Factories — Without Enterprise Pricing</h1>
+        <h1 id="hero-title">Automated Quality Inspection for Factories — Without Enterprise Pricing</h1>
         <p class="lead">Detect defects in real-time using AI on your production line. No cloud. No delays.</p>
         <a href="#contact" class="btn">Request Demo</a>
     </div>
 </section>
 
-<section class="section" id="problem">
+<section class="section" id="problem" aria-labelledby="problem-title">
     <div class="container">
-        <h2>Problem</h2>
-        <p>Factories are pressured to adopt AI but:</p>
+        <h2 id="problem-title">Problem</h2>
+        <p>Factories are under pressure to adopt AI, but common options create new bottlenecks:</p>
         <ul>
-            <li>Systems cost ¥200,000–500,000</li>
-            <li>Cloud adds latency</li>
-            <li>Integration is slow</li>
+            <li>Systems often cost ¥200,000–500,000</li>
+            <li>Cloud processing adds latency and network risk</li>
+            <li>Integration timelines are slow and expensive</li>
         </ul>
     </div>
 </section>
 
-<section class="section alt" id="solution">
+<section class="section alt" id="solution" aria-labelledby="solution-title">
     <div class="container">
-        <h2>Solution</h2>
+        <h2 id="solution-title">Solution</h2>
         <ul class="grid-list">
             <li>Real-time defect detection (PASS/FAIL)</li>
-            <li>Runs locally on edge device</li>
+            <li>Runs locally on an edge device</li>
             <li>Deploys in one day</li>
-            <li>Live dashboard</li>
+            <li>Live production dashboard</li>
         </ul>
     </div>
 </section>
 
-<section class="section" id="how-it-works">
+<section class="section" id="how-it-works" aria-labelledby="how-title">
     <div class="container">
-        <h2>How it works</h2>
+        <h2 id="how-title">How it works</h2>
         <ol>
-            <li>Camera captures product</li>
-            <li>AI analyzes in real-time</li>
-            <li>PASS/FAIL + defect type</li>
-            <li>Dashboard updates instantly</li>
+            <li>Camera captures each product</li>
+            <li>AI analyzes defects in real time</li>
+            <li>Outputs PASS/FAIL with defect type</li>
+            <li>Dashboard updates instantly for operators</li>
         </ol>
     </div>
 </section>
 
-<section class="section alt">
+<section class="section alt" id="why-now" aria-labelledby="why-title">
     <div class="container">
-        <h2>Why now</h2>
+        <h2 id="why-title">Why now</h2>
         <ul>
-            <li>Government pushing AI manufacturing</li>
-            <li>Subsidies available</li>
-            <li>SMEs underserved</li>
+            <li>Government programs are accelerating AI manufacturing</li>
+            <li>Subsidies are available for modernization projects</li>
+            <li>SMEs remain underserved by enterprise-focused tools</li>
         </ul>
     </div>
 </section>
 
-<section class="section" id="pricing">
+<section class="section" id="pricing" aria-labelledby="pricing-title">
     <div class="container">
-        <h2>Pricing</h2>
+        <h2 id="pricing-title">Pricing</h2>
         <div class="pricing-grid">
             <article class="card">
                 <h3>Hardware</h3>
@@ -83,20 +83,24 @@
     </div>
 </section>
 
-<section class="section alt">
-    <div class="container">
-        <h2>Target</h2>
-        <ul>
-            <li>SMEs (50–500 workers)</li>
-            <li>Electronics, metal, textile, etc.</li>
-        </ul>
-        <h2>Advantages</h2>
-        <ul class="grid-list">
-            <li>10–20× cheaper</li>
-            <li>No cloud</li>
-            <li>Fast deployment</li>
-            <li>Custom per factory</li>
-        </ul>
+<section class="section alt" id="fit" aria-labelledby="fit-title">
+    <div class="container stack-lg">
+        <div>
+            <h2 id="fit-title">Target factories</h2>
+            <ul>
+                <li>SMEs with 50–500 workers</li>
+                <li>Electronics, metal, textile, and mixed-assembly lines</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Advantages</h2>
+            <ul class="grid-list">
+                <li>10–20× lower cost than enterprise systems</li>
+                <li>No cloud dependency</li>
+                <li>Fast on-site deployment</li>
+                <li>Custom models per factory line</li>
+            </ul>
+        </div>
     </div>
 </section>
 {% endblock %}
