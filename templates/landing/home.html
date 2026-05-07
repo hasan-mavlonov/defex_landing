@@ -1,106 +1,81 @@
 {% extends "base.html" %}
 
-{% block title %}Automated Quality Inspection for Factories{% endblock %}
+{% block title %}Defex AI | Automated Quality Inspection for Factories{% endblock %}
 
 {% block content %}
-<section class="hero section" aria-labelledby="hero-title">
-    <div class="container">
-        <p class="eyebrow">Factory AI Inspection</p>
-        <h1 id="hero-title">Automated Quality Inspection for Factories — Without Enterprise Pricing</h1>
-        <p class="lead">Detect defects in real-time using AI on your production line. No cloud. No delays.</p>
-        <a href="#contact" class="btn">Request Demo</a>
+{% include "components/navbar.html" %}
+
+<section class="hero hero--center hero--product" id="top">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__label reveal">Industrial Vision Intelligence</div>
+    <h1 class="hero__title">Defex<span class="accent-dot">-</span>AI</h1>
+    <p class="hero__subtitle reveal">Automated Quality Inspection for Factories</p>
+    <p class="hero__desc reveal">Detect defects in real-time on your production line with low-latency edge AI. No cloud dependency. No enterprise lock-in.</p>
+    <div class="hero__actions reveal">
+        <a href="#pricing" class="btn btn--ghost">View Pricing</a>
+        <a href="#contact" class="btn btn--primary">Request Demo</a>
     </div>
+    <span class="hero__coords" aria-hidden="true">SME FACTORY FOCUSED</span>
+    <span class="hero__version" aria-hidden="true">DEPLOYMENT &lt; 1 DAY</span>
 </section>
 
-<section class="section" id="problem" aria-labelledby="problem-title">
-    <div class="container">
-        <h2 id="problem-title">Problem</h2>
-        <p>Factories are under pressure to adopt AI, but common options create new bottlenecks:</p>
-        <ul>
-            <li>Systems often cost ¥200,000–500,000</li>
-            <li>Cloud processing adds latency and network risk</li>
-            <li>Integration timelines are slow and expensive</li>
-        </ul>
-    </div>
-</section>
-
-<section class="section alt" id="solution" aria-labelledby="solution-title">
-    <div class="container">
-        <h2 id="solution-title">Solution</h2>
-        <ul class="grid-list">
-            <li>Real-time defect detection (PASS/FAIL)</li>
-            <li>Runs locally on an edge device</li>
-            <li>Deploys in one day</li>
-            <li>Live production dashboard</li>
-        </ul>
-    </div>
-</section>
-
-<section class="section" id="how-it-works" aria-labelledby="how-title">
-    <div class="container">
-        <h2 id="how-title">How it works</h2>
-        <ol>
-            <li>Camera captures each product</li>
-            <li>AI analyzes defects in real time</li>
-            <li>Outputs PASS/FAIL with defect type</li>
-            <li>Dashboard updates instantly for operators</li>
-        </ol>
-    </div>
-</section>
-
-<section class="section alt" id="why-now" aria-labelledby="why-title">
-    <div class="container">
-        <h2 id="why-title">Why now</h2>
-        <ul>
-            <li>Government programs are accelerating AI manufacturing</li>
-            <li>Subsidies are available for modernization projects</li>
-            <li>SMEs remain underserved by enterprise-focused tools</li>
-        </ul>
-    </div>
-</section>
-
-<section class="section" id="pricing" aria-labelledby="pricing-title">
-    <div class="container">
-        <h2 id="pricing-title">Pricing</h2>
-        <div class="pricing-grid">
-            <article class="card">
-                <h3>Hardware</h3>
-                <p>¥15,000–30,000</p>
-            </article>
-            <article class="card">
-                <h3>Installation</h3>
-                <p>¥3,000–5,000</p>
-            </article>
-            <article class="card">
-                <h3>Model training</h3>
-                <p>¥5,000–10,000</p>
-            </article>
-            <article class="card">
-                <h3>Monthly</h3>
-                <p>¥2,000–5,000</p>
-            </article>
+<section class="section" id="problem">
+    <div class="details__inner">
+        <div class="details__left reveal">
+            <div class="section__eyebrow">// Problem</div>
+            <h2 class="section__title">AI Inspection Is<br>Still Overpriced</h2>
+            <p class="details__text">Manufacturers are under pressure to modernize but most systems remain expensive, cloud-dependent, and slow to deploy for mid-market teams.</p>
+        </div>
+        <div class="details__right">
+            <div class="stat-card reveal"><div class="stat-card__label">Typical CapEx</div><div class="stat-card__value">¥200K<span class="stat-card__unit">+</span></div></div>
+            <div class="stat-card stat-card--dark reveal"><div class="stat-card__label">Cloud Delay</div><div class="stat-card__value">High<span class="stat-card__unit">risk</span></div></div>
+            <div class="stat-card reveal"><div class="stat-card__label">Integration Time</div><div class="stat-card__value">Weeks<span class="stat-card__unit">to months</span></div></div>
+            <div class="stat-card reveal"><div class="stat-card__label">SME Fit</div><div class="stat-card__value">Low</div></div>
         </div>
     </div>
 </section>
 
-<section class="section alt" id="fit" aria-labelledby="fit-title">
-    <div class="container stack-lg">
-        <div>
-            <h2 id="fit-title">Target factories</h2>
-            <ul>
-                <li>SMEs with 50–500 workers</li>
-                <li>Electronics, metal, textile, and mixed-assembly lines</li>
-            </ul>
+<section class="section section--surface" id="solution">
+    <div class="container">
+        <div class="section__header reveal">
+            <div class="section__eyebrow">// Solution</div>
+            <h2 class="section__title">Defex Platform<br>Capabilities</h2>
         </div>
-        <div>
-            <h2>Advantages</h2>
-            <ul class="grid-list">
-                <li>10–20× lower cost than enterprise systems</li>
-                <li>No cloud dependency</li>
-                <li>Fast on-site deployment</li>
-                <li>Custom models per factory line</li>
-            </ul>
+        <div class="spec-grid reveal">
+            <div class="spec-cell"><div><div class="spec-cell__id">DF-01</div><div class="spec-cell__label">Defect Detection</div></div><div><div class="spec-cell__value">PASS<span class="spec-cell__unit">/ FAIL</span></div><div class="spec-cell__note">Realtime visual classification with defect-type output.</div></div></div>
+            <div class="spec-cell spec-cell--dark"><div><div class="spec-cell__id">DF-02</div><div class="spec-cell__label">Deployment</div></div><div><div class="spec-cell__value">1<span class="spec-cell__unit">day</span></div><div class="spec-cell__note">Rapid on-site setup for existing production lines.</div></div></div>
+            <div class="spec-cell"><div><div class="spec-cell__id">DF-03</div><div class="spec-cell__label">Runtime</div></div><div><div class="spec-cell__value">Edge<span class="spec-cell__unit">only</span></div><div class="spec-cell__note">Local compute removes cloud latency and instability.</div></div></div>
+            <div class="spec-cell spec-cell--safety"><div><div class="spec-cell__id">DF-04</div><div class="spec-cell__label">Dashboard</div></div><div><div class="spec-cell__value">Live</div><div class="spec-cell__note">Operators monitor throughput and quality in real time.</div></div></div>
         </div>
     </div>
 </section>
+
+<section class="cta-band" id="how-it-works">
+    <div class="cta-band__inner reveal">
+        <h2 class="cta-band__title">How It Works<span class="accent">:</span></h2>
+        <p class="cta-band__text">Camera capture → AI inference → PASS/FAIL decision → live dashboard updates for operators and supervisors.</p>
+        <div class="cta-band__actions">
+            <a class="btn btn--ghost" href="#problem">View Use Cases</a>
+            <a class="btn btn--primary" href="#contact">Book Factory Demo</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="pricing">
+    <div class="details__inner">
+        <div class="details__left reveal">
+            <div class="section__eyebrow">// Pricing</div>
+            <h2 class="section__title">Built for<br>Factory Economics</h2>
+            <p class="details__text">Transparent pricing for SMEs with fast ROI and no enterprise overhead.</p>
+        </div>
+        <div class="details__right">
+            <div class="stat-card reveal"><div class="stat-card__label">Hardware</div><div class="stat-card__value">¥15K<span class="stat-card__unit">–30K</span></div></div>
+            <div class="stat-card reveal"><div class="stat-card__label">Installation</div><div class="stat-card__value">¥3K<span class="stat-card__unit">–5K</span></div></div>
+            <div class="stat-card reveal"><div class="stat-card__label">Model Training</div><div class="stat-card__value">¥5K<span class="stat-card__unit">–10K</span></div></div>
+            <div class="stat-card stat-card--dark reveal"><div class="stat-card__label">Monthly</div><div class="stat-card__value">¥2K<span class="stat-card__unit">–5K</span></div></div>
+        </div>
+    </div>
+</section>
+
+{% include "components/footer.html" %}
 {% endblock %}
