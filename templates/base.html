@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/static/css/landing.css">
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
 </head>
 <body>
     {% include "components/navbar.html" %}
@@ -22,6 +23,6 @@
 
     {% include "components/footer.html" %}
 
-    <script src="/static/js/landing.js"></script>
+    <script src="{% static 'js/landing.js' %}"></script>
 </body>
 </html>
